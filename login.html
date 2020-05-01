@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//code.ionicframework.com/1.0.0-beta.12/css/ionic.css" rel="stylesheet">
+    <script src="//code.ionicframework.com/1.0.0-beta.12/js/ionic.bundle.js"></script>
+    <style>
+         :root {
+            --ion-safe-area-top: 20px;
+            --ion-safe-area-bottom: 22px;
+        }
+    </style>
+    <style>
+        ion-content ion-toolbar {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Toolbar</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="user.username">
+        </label>
+            <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="user.password">
+        </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="signIn(user)">
+          Sign-In
+        </button>
+            <p class="text-center">
+                <a href="f.html">Forgot password</a>
+            </p>
+        </div>
+    </ion-content>
+
+</body>
+
+</html>

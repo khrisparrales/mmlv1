@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-145deg, #6f4575, #88d8b1);
+}
+
+.login {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 44em;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+  background-image: url("https://www.dondeir.com/wp-content/uploads/2018/05/playa-bioluminiscente-holbox.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em;
+  background-color: #fafafa;
+  width: 35vw;
+}
+
+.login-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333333;
+}
+
+.icon-log{
+font-size: .8em;
+padding-right: .5em;  
+}
+
+.instructions {
+  display: block;
+  padding: 1em 0 0;
+  font-weight: 400;
+  font-size: 1em;
+  color: #797979;
+}
+
+button, .btn {
+  flex: 1 calc(10% - 15px);
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-style: none;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 0.5em 0.5em 0 0;
+  font-size: 1em;
+}
+
+.fab {
+  padding: .5em;
+  text-align:center;
+  
+}
+
+.facebook  {
+  color: #ffffff;
+  background-color: #3b5998;
+}
+
+.xing {
+  color: #ffffff;
+  background-color: #026466;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  color: #797979;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: #323232;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.form .miniform {
+  background: none;
+  width: 100%;
+  margin-bottom: .5em;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid #AC83DE;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.aditional {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1em;
+}
+
+.password {
+    text-decoration: none;
+    color: black;
+}
+
+.password:hover {
+    color: #AC83DE;
+}
+
+.btn-login {
+  color: #ffffff;
+  background-image: linear-gradient(-90deg, #4268a7, #aa7382);
+}
+
+.signup {
+  background-color: #ffffff;
+  color: #464646;
+  border: 1px solid #BFBDC1;
+}
+
+.tyc {
+  margin-top: 1.5em;
+  font-size: 0.9em;
+  color: #434343;
+}
+
+.link-tyc {
+  text-decoration: none;
+  color: #80C6D8;
+}
+
+
+@media (max-width: 800px) {
+  .login {
+    width: auto;
+  }
+  .content {
+    padding: 2em 2em 0.8em;
+    width: 21em;
+  }
+  .btn {
+    height: 5em;
+    flex-direction: column;
+  }
+}
