@@ -161,7 +161,7 @@ function mostrarmovielist() {
 
                     
                     <td >${doc.data().Nombre}</td>
-                    <td>${doc.data().Fecha}</td>
+                    
                         <td>  <button class="btn btn-warning"" id="btneditmovie" onclick="editmovie('${doc.id}','${doc.data().Nombre}')">Editar </button>  </td>
                         <td><button class="btn btn-danger" id="btndelemovie" onclick="delemovie('${doc.id}')">Eliminar </button></td>
 
