@@ -67,7 +67,7 @@ function mostrar() {
 
                     <th scope="row">${doc.id}</th>
                     <td >${doc.data().Nombre}</td>
-                    
+                     <td >${doc.data().title}</td>
                       <td>  <button class="btn btn-warning"" id="btnedituser" onclick="edituser('${doc.id}','${doc.data().Nombre}','${doc.data().Fecha}')">Editar </button>  </td>
                         <td><button class="btn btn-danger" id="btndeleuser" onclick="deleuser('${doc.id}')">Eliminar </button></td>
                 </tr>`
