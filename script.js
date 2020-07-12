@@ -1,4 +1,3 @@
-
 var nombre = document.getElementById('Nametxt').value;
 var fecha = document.getElementById('Fechatxt').value;
 var usuario = document.getElementById('ID').value;
@@ -144,4 +143,3 @@ container.appendChild(a);
 
 }
 apiCall();
-
