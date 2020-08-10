@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toolbar</title>
@@ -11,197 +11,197 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="module">
-      import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/index.esm.js'; window.menuController = menuController;
+        import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/index.esm.js'; window.menuController = menuController;
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <ion-app>
-      <ion-menu side="start" content-id="main-content">
-        <ion-header>
-          <ion-toolbar translucent>
-            <ion-title>Menu</ion-title>
-          </ion-toolbar>
-        </ion-header>
-        <ion-content>
-          <ion-list>
-            <ion-item>
-              <ion-icon name="mail" slot="start"></ion-icon>
-              <ion-label>Inbox</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-icon onclick="prs()" name="paper-plane" slot="start"></ion-icon>
-              <ion-label>Outbox</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-icon name="heart" slot="start"></ion-icon>
-              <ion-label>Favorites</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-icon name="archive" slot="start"></ion-icon>
-              <ion-label>Archived</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-icon name="trash" slot="start"></ion-icon>
-              <ion-label>Trash</ion-label>
-            </ion-item>
-            <ion-item>
-              <ion-icon name="warning" slot="start"></ion-icon>
-              <ion-label>Spam</ion-label>
-            </ion-item>
-          </ion-list>
-        </ion-content>
-      </ion-menu>
-
-      <div class="ion-page" id="main-content">
-
-      </div>
-      <ion-content fullscreen="true">
-        <ion-toolbar color="primary">
-          <ion-buttons slot="start">
-            <ion-menu-button auto-hide="false"></ion-menu-button>
-          </ion-buttons>
-          <ion-title>My Movie List</ion-title>
-        </ion-toolbar>
-
-        <ion-tabs>
-
-          <ion-tab href="f.html" tab="music">
-            <ion-header translucent>
-              <ion-toolbar>
-                <ion-title>Music</ion-title>
-              </ion-toolbar>
+        <ion-menu side="start" content-id="main-content">
+            <ion-header>
+                <ion-toolbar translucent>
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
             </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-item>
+                        <ion-icon name="mail" slot="start"></ion-icon>
+                        <ion-label>Inbox</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon onclick="prs()" name="paper-plane" slot="start"></ion-icon>
+                        <ion-label>Outbox</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="heart" slot="start"></ion-icon>
+                        <ion-label>Favorites</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="archive" slot="start"></ion-icon>
+                        <ion-label>Archived</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="trash" slot="start"></ion-icon>
+                        <ion-label>Trash</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="warning" slot="start"></ion-icon>
+                        <ion-label>Spam</ion-label>
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
 
-            <ion-content fullscreen class="ion-padding">
+        <div class="ion-page" id="main-content">
 
-              <!--
+        </div>
+        <ion-content fullscreen="true">
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-menu-button auto-hide="false"></ion-menu-button>
+                </ion-buttons>
+                <ion-title>My Movie List</ion-title>
+            </ion-toolbar>
+
+            <ion-tabs>
+
+                <ion-tab href="f.html" tab="music">
+                    <ion-header translucent>
+                        <ion-toolbar>
+                            <ion-title>Music</ion-title>
+                        </ion-toolbar>
+                    </ion-header>
+
+                    <ion-content fullscreen class="ion-padding">
+
+                        <!--
 <a href="login.html">
                             <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
                         </a>
                -->
 
-              <ion-item>
-                <label id="pt"></label>
-                <ion-label position="floating">Search</ion-label>
-                <ion-textarea id="txtsearch" placeholder="Enter more information here...">  
-                </ion-textarea>
-                <ion-textarea id="txturlgd" placeholder="Ingrese link de google drive">
-                </ion-textarea>
-                <ion-button id="Sear" onclick="return buscarPopup();" size="large" color="danger">Search</ion-button>
-              </ion-item>
+                        <ion-item>
+                            <label id="pt"></label>
+                            <ion-label position="floating">Search</ion-label>
+                            <ion-textarea id="txtsearch" placeholder="Enter more information here...">
+                            </ion-textarea>
+                            <ion-textarea id="txturlgd" placeholder="Ingrese link de google drive">
+                            </ion-textarea>
+                            <ion-button id="Sear" onclick="return buscarPopup();" size="large" color="danger">Search</ion-button>
+                        </ion-item>
 
-              <ion-card>
-                <img height="10%" width="10%" />
-                <ion-card-header>
-                  <ion-card-subtitle id="cont1"></ion-card-subtitle>
-                  <ion-card-title id="anio"></ion-card-title>
-                </ion-card-header>
-                <ion-card-content id="descripcion">
+                        <ion-card>
+                            <img height="10%" width="10%" />
+                            <ion-card-header>
+                                <ion-card-subtitle id="cont1"></ion-card-subtitle>
+                                <ion-card-title id="anio"></ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content id="descripcion">
 
-                </ion-card-content>
-              </ion-card>
-              <section>
-
-
-
-                <ion-button id="Prev" onclick="return cerrarPopup();" size="large" color="dark">Preview</ion-button>
-                <ion-button id="Next" onclick="return abrirPopup();" size="large" color="dark">Next</ion-button>
-                <ion-button id="Add" onclick="return savePopup();" size="large" color="success">Add Firebase</ion-button>
-                <div id="containerjson"></div>
-              </section>
-            </ion-content>
-          </ion-tab>
-
-          <ion-tab tab="movies">
-            <ion-header translucent>
-              <ion-toolbar>
-                <ion-title>Movies</ion-title>
-              </ion-toolbar>
-            </ion-header>
-
-            <ion-content fullscreen class="ion-padding">
-              <div class="container">
-                <h1 id="titleu"> Usuario</h1>
-
-                <input type="text" id="Movietxt" class="form-control my-2" placeholder="Agregue Nombre">
-
-                <button class="btn btn-info" id="btnaddmovie" onclick="addmovie()">Agregar Usuario</button>
-                <table class="table table-sm table-dark my-3">
-                  <thead>
-                    <tr>
-
-                      <th scope="col"> Pelicula</th>
-                      <th scope="col">Categoria</th>
-                      <th scope="col">Editar</th>
-                      <th scope="col">Eliminar</th>
-
-                    </tr>
-                  </thead>
-                  <tbody id="tablemovie">
-                    <tr>
+                            </ion-card-content>
+                        </ion-card>
+                        <section>
 
 
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </ion-content>
-          </ion-tab>
 
-          <ion-tab tab="games">
-            <ion-header translucent>
-              <ion-toolbar>
-                <ion-title>Games</ion-title>
-              </ion-toolbar>
-            </ion-header>
+                            <ion-button id="Prev" onclick="return cerrarPopup();" size="large" color="dark">Preview</ion-button>
+                            <ion-button id="Next" onclick="return abrirPopup();" size="large" color="dark">Next</ion-button>
+                            <ion-button id="Add" onclick="return savePopup();" size="large" color="success">Add Firebase</ion-button>
+                            <div id="containerjson"></div>
+                        </section>
+                    </ion-content>
+                </ion-tab>
 
-            <ion-content fullscreen class="ion-padding">
+                <ion-tab tab="movies">
+                    <ion-header translucent>
+                        <ion-toolbar>
+                            <ion-title>Movies</ion-title>
+                        </ion-toolbar>
+                    </ion-header>
 
-              <div class="container">
-                <h1>Agregar Usuario</h1>
-                <input type="text" id="ID" class="form-control my-2" placeholder="Agregue ID">
-                <input type="text" id="Nametxt" class="form-control my-2" placeholder="Agregue Nombre">
-                <input type="text" id="Fechatxt" class="form-control my-2" placeholder="Agregue Fecha">
-                <button class="btn btn-info" id="btnadduser" onclick="adduser()">Agregar Usuario</button>
-                <table class="table table-sm table-dark my-3">
-                  <thead>
-                    <tr>
-                      <th scope="col">#Usuario</th>
-                      <th scope="col">Nombre</th>
-                      <th scope="col">Fecha</th>
-                      <th scope="col">Editar</th>
-                      <th scope="col">Eliminar</th>
-                    </tr>
-                  </thead>
-                  <tbody id="tablausuario">
-                    <tr>
+                    <ion-content fullscreen class="ion-padding">
+                        <div class="container">
+                            <h1 id="titleu"> Usuario</h1>
 
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                            <input type="text" id="Movietxt" class="form-control my-2" placeholder="Agregue Nombre">
 
-            </ion-content>
-          </ion-tab>
+                            <button class="btn btn-info" id="btnaddmovie" onclick="addmovie()">Agregar Usuario</button>
+                            <table class="table table-sm table-dark my-3">
+                                <thead>
+                                    <tr>
 
-          <ion-tab-bar slot="bottom">
-           
-           
-          </ion-tab-bar>
-        </ion-tabs>
+                                        <th scope="col"> Pelicula</th>
+                                        <th scope="col">Categoria</th>
+                                        <th scope="col">Editar</th>
+                                        <th scope="col">Eliminar</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="tablemovie">
+                                    <tr>
 
 
-      </ion-content>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </ion-content>
+                </ion-tab>
 
-      <ion-footer>
-      
-      </ion-footer>
+                <ion-tab tab="games">
+                    <ion-header translucent>
+                        <ion-toolbar>
+                            <ion-title>Games</ion-title>
+                        </ion-toolbar>
+                    </ion-header>
+
+                    <ion-content fullscreen class="ion-padding">
+
+                        <div class="container">
+                            <h1>Agregar Usuario</h1>
+                            <input type="text" id="ID" class="form-control my-2" placeholder="Agregue ID">
+                            <input type="text" id="Nametxt" class="form-control my-2" placeholder="Agregue Nombre">
+                            <input type="text" id="Fechatxt" class="form-control my-2" placeholder="Agregue Fecha">
+                            <button class="btn btn-info" id="btnadduser" onclick="adduser()">Agregar Usuario</button>
+                            <table class="table table-sm table-dark my-3">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#Usuario</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Editar</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablausuario">
+                                    <tr>
+
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </ion-content>
+                </ion-tab>
+
+                <ion-tab-bar slot="bottom">
+
+
+                </ion-tab-bar>
+            </ion-tabs>
+
+
+        </ion-content>
+
+        <ion-footer>
+
+        </ion-footer>
     </ion-app>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -209,7 +209,7 @@
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css" />
     <script type="module">
-      import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/index.esm.js'; window.alertController = alertController;
+        import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/index.esm.js'; window.alertController = alertController;
     </script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
@@ -218,6 +218,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src=script.js></script>
-  </body>
+</body>
 
 </html>
